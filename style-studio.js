@@ -136,26 +136,41 @@ function updatePreview() {
 
   const selectedItems = [];
 
+
   if (styleData.vibe) {
-    selectedItems.push(styleData.vibe);
+
+    selectedItems.push(
+      styleData.vibe
+    );
+
   }
 
+
   if (styleData.color) {
-    selectedItems.push(styleData.color);
+
+    selectedItems.push(
+      styleData.color
+    );
+
   }
+
 
   selectedItems.push(
     ...styleData.accessories
   );
 
 
-  /* Count */
+  /* =========================
+     COUNT
+  ========================== */
 
   selectionCount.textContent =
     `${selectedItems.length} selected`;
 
 
-  /* Title */
+  /* =========================
+     TITLE
+  ========================== */
 
   if (styleData.vibe) {
 
@@ -170,7 +185,9 @@ function updatePreview() {
   }
 
 
-  /* Description */
+  /* =========================
+     DESCRIPTION
+  ========================== */
 
   if (selectedItems.length === 0) {
 
@@ -185,16 +202,20 @@ function updatePreview() {
   }
 
 
-  /* Tags */
+  /* =========================
+     TAGS
+  ========================== */
 
   previewTags.innerHTML = "";
+
 
   if (selectedItems.length === 0) {
 
     const empty =
       document.createElement("span");
 
-    empty.className = "empty-tag";
+    empty.className =
+      "empty-tag";
 
     empty.textContent =
       "Nothing selected yet";
@@ -218,7 +239,9 @@ function updatePreview() {
   }
 
 
-  /* Score */
+  /* =========================
+     SCORE
+  ========================== */
 
   const score =
     Math.min(
@@ -226,11 +249,14 @@ function updatePreview() {
       selectedItems.length * 15
     );
 
+
   styleScore.textContent =
     `${score}%`;
 
+
   scoreBar.style.width =
     `${score}%`;
+
 }
 
 
@@ -252,6 +278,7 @@ saveButton.addEventListener("click", () => {
     );
 
     return;
+
   }
 
 
@@ -278,20 +305,25 @@ function loadSavedStyle() {
   const saved =
     localStorage.getItem("mallowStyle");
 
+
   if (!saved) {
     return;
   }
+
 
   try {
 
     const parsed =
       JSON.parse(saved);
 
+
     styleData.vibe =
       parsed.vibe || null;
 
+
     styleData.color =
       parsed.color || null;
+
 
     styleData.accessories =
       Array.isArray(parsed.accessories)
@@ -308,7 +340,9 @@ function loadSavedStyle() {
         styleData.vibe
       ) {
 
-        choice.classList.add("selected");
+        choice.classList.add(
+          "selected"
+        );
 
       }
 
@@ -324,7 +358,9 @@ function loadSavedStyle() {
         styleData.color
       ) {
 
-        choice.classList.add("selected");
+        choice.classList.add(
+          "selected"
+        );
 
       }
 
@@ -341,7 +377,9 @@ function loadSavedStyle() {
         )
       ) {
 
-        choice.classList.add("selected");
+        choice.classList.add(
+          "selected"
+        );
 
       }
 
@@ -370,6 +408,7 @@ function showToast(message, icon) {
   const existing =
     document.querySelector(".studio-toast");
 
+
   if (existing) {
     existing.remove();
   }
@@ -377,6 +416,7 @@ function showToast(message, icon) {
 
   const toast =
     document.createElement("div");
+
 
   toast.className =
     "studio-toast";
@@ -398,7 +438,9 @@ function showToast(message, icon) {
 
 
   requestAnimationFrame(() => {
+
     toast.classList.add("show");
+
   });
 
 
@@ -406,8 +448,11 @@ function showToast(message, icon) {
 
     toast.classList.remove("show");
 
+
     setTimeout(() => {
+
       toast.remove();
+
     }, 300);
 
   }, 3000);
@@ -421,6 +466,7 @@ function showToast(message, icon) {
 
 const profileButton =
   document.getElementById("profileButton");
+
 
 if (profileButton) {
 
@@ -444,169 +490,3 @@ if (profileButton) {
 ========================= */
 
 loadSavedStyle();
-
-
-/* =========================
-   MALLOW MOVEMENT
-========================= */
-
-const movementRoutines = {
-
-  beginner: {
-    title: "Gentle Beginner",
-    steps: [
-      ["Easy warm-up", "2 minutes"],
-      ["March in place", "2 minutes"],
-      ["Wall push-ups", "8–10 reps"],
-      ["Chair-supported squats", "8–10 reps"],
-      ["Gentle stretching", "2 minutes"]
-    ]
-  },
-
-  strength: {
-    title: "General Strength",
-    steps: [
-      ["Easy warm-up", "2 minutes"],
-      ["Wall push-ups", "8–12 reps"],
-      ["Bodyweight squats", "8–12 reps"],
-      ["Glute bridges", "8–12 reps"],
-      ["Gentle cool-down", "2 minutes"]
-    ]
-  },
-
-  stretch: {
-    title: "Stretch & Mobility",
-    steps: [
-      ["Shoulder rolls", "30 seconds"],
-      ["Neck mobility", "30 seconds"],
-      ["Gentle side stretch", "30 seconds each side"],
-      ["Hamstring stretch", "30 seconds each side"],
-      ["Easy breathing", "1–2 minutes"]
-    ]
-  },
-
-  energy: {
-    title: "Quick Energy",
-    steps: [
-      ["March in place", "1 minute"],
-      ["Arm circles", "30 seconds"],
-      ["Step side-to-side", "1 minute"],
-      ["Wall push-ups", "8–10 reps"],
-      ["Easy cool-down", "1 minute"]
-    ]
-  },
-
-  relax: {
-    title: "Wind Down",
-    steps: [
-      ["Slow breathing", "1 minute"],
-      ["Shoulder rolls", "30 seconds"],
-      ["Gentle neck mobility", "30 seconds"],
-      ["Easy full-body stretch", "2 minutes"],
-      ["Slow breathing", "1 minute"]
-    ]
-  }
-
-};
-
-
-const movementCards =
-  document.querySelectorAll(".movement-card[data-routine]");
-
-const routineDisplay =
-  document.getElementById("routineDisplay");
-
-const routineTitle =
-  document.getElementById("routineTitle");
-
-const routineList =
-  document.getElementById("routineList");
-
-const randomRoutine =
-  document.getElementById("randomRoutine");
-
-const closeRoutine =
-  document.getElementById("closeRoutine");
-
-
-function showRoutine(type) {
-
-  const routine = movementRoutines[type];
-
-  if (!routine) return;
-
-  routineTitle.textContent = routine.title;
-
-  routineList.innerHTML = "";
-
-  routine.steps.forEach((step, index) => {
-
-    const item = document.createElement("div");
-
-    item.className = "routine-step";
-
-    item.innerHTML = `
-      <div class="routine-number">
-        ${index + 1}
-      </div>
-
-      <div>
-        <strong>${step[0]}</strong>
-        <span>${step[1]}</span>
-      </div>
-    `;
-
-    routineList.appendChild(item);
-
-  });
-
-  routineDisplay.hidden = false;
-
-  routineDisplay.scrollIntoView({
-    behavior: "smooth",
-    block: "center"
-  });
-
-}
-
-
-movementCards.forEach(card => {
-
-  card.addEventListener("click", () => {
-
-    const type =
-      card.dataset.routine;
-
-    showRoutine(type);
-
-  });
-
-});
-
-
-if (randomRoutine) {
-
-  randomRoutine.addEventListener("click", () => {
-
-    const types =
-      Object.keys(movementRoutines);
-
-    const randomType =
-      types[Math.floor(Math.random() * types.length)];
-
-    showRoutine(randomType);
-
-  });
-
-}
-
-
-if (closeRoutine) {
-
-  closeRoutine.addEventListener("click", () => {
-
-    routineDisplay.hidden = true;
-
-  });
-
-}
