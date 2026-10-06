@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,52 +16,54 @@
   <div class="background-glow glow-one"></div>
   <div class="background-glow glow-two"></div>
 
+
   <!-- =========================
        NAVIGATION
   ========================== -->
 
   <nav class="navbar">
 
-```
-<a href="index.html" class="studio-logo">
-  <div class="logo-flower">✿</div>
-  <span>mallow</span>
-</a>
+    <a href="index.html" class="studio-logo">
+      <div class="logo-flower">✿</div>
+      <span>mallow</span>
+    </a>
 
-<div class="nav-links">
 
-  <a href="index.html">
-    Home
-  </a>
+    <div class="nav-links">
 
-  <a href="style.html" class="active">
-    Style
-  </a>
+      <a href="index.html">
+        Home
+      </a>
 
-  <a href="#vibe">
-    Vibe
-  </a>
+      <a href="style.html" class="active">
+        Style
+      </a>
 
-  <a href="#express">
-    Express
-  </a>
+      <a href="#vibe">
+        Vibe
+      </a>
 
-  <a href="#confidence">
-    Confidence
-  </a>
+      <a href="#express">
+        Express
+      </a>
 
-</div>
+      <a href="#confidence">
+        Confidence
+      </a>
 
-<button
-  class="profile-button"
-  id="profileButton"
->
-  <span>♡</span>
-  My Mallow
-</button>
-```
+    </div>
+
+
+    <button
+      class="profile-button"
+      id="profileButton"
+    >
+      <span>♡</span>
+      My Mallow
+    </button>
 
   </nav>
+
 
   <!-- =========================
        MAIN CONTENT
@@ -69,1068 +71,647 @@
 
   <main>
 
-```
-<!-- =========================
-     PAGE HEADER
-========================== -->
 
-<section class="studio-header">
+    <!-- =========================
+         PAGE HEADER
+    ========================== -->
 
-  <div class="welcome-pill">
+    <section class="studio-header">
 
-    <span>✦</span>
+      <div class="welcome-pill">
 
-    Style Studio
+        <span>✦</span>
 
-  </div>
+        Style Studio
 
-
-  <h1>
-
-    Create a style
-
-    <span>
-      that feels like you.
-    </span>
-
-  </h1>
+      </div>
 
 
-  <p>
+      <h1>
 
-    Experiment with aesthetics, colors, and little details.
-    There are no rules here—just possibilities.
+        Create a style
 
-  </p>
+        <span>
+          that feels like you.
+        </span>
 
-</section>
-
-
-
-<!-- =========================
-     STYLE STUDIO
-========================== -->
-
-<section class="style-studio">
+      </h1>
 
 
-  <!-- =========================
-       SELECTION PANEL
-  ========================== -->
+      <p>
 
-  <div class="style-panel">
+        Experiment with aesthetics, colors, and little details.
+        There are no rules here—just possibilities.
+
+      </p>
+
+    </section>
 
 
-    <!-- VIBE -->
 
-    <div class="panel-heading">
+    <!-- =========================
+         STYLE STUDIO
+    ========================== -->
 
-      <div>
+    <section class="style-studio">
+
+
+      <!-- =========================
+           SELECTION PANEL
+      ========================== -->
+
+      <div class="style-panel">
+
+
+        <!-- VIBE -->
+
+        <div class="panel-heading">
+
+          <div>
+
+            <span class="panel-label">
+              01
+            </span>
+
+            <h2>
+              Choose your vibe
+            </h2>
+
+          </div>
+
+
+          <span
+            class="selection-count"
+            id="selectionCount"
+          >
+            0 selected
+          </span>
+
+        </div>
+
+
+        <div
+          class="choice-grid"
+          id="vibeChoices"
+        >
+
+          <button
+            class="choice-card"
+            data-type="vibe"
+            data-value="Soft"
+          >
+
+            <span class="choice-icon">
+              🌷
+            </span>
+
+            <span class="choice-name">
+              Soft
+            </span>
+
+            <span class="choice-description">
+              Gentle & cozy
+            </span>
+
+          </button>
+
+
+          <button
+            class="choice-card"
+            data-type="vibe"
+            data-value="Cute"
+          >
+
+            <span class="choice-icon">
+              🎀
+            </span>
+
+            <span class="choice-name">
+              Cute
+            </span>
+
+            <span class="choice-description">
+              Playful & sweet
+            </span>
+
+          </button>
+
+
+          <button
+            class="choice-card"
+            data-type="vibe"
+            data-value="Alternative"
+          >
+
+            <span class="choice-icon">
+              🖤
+            </span>
+
+            <span class="choice-name">
+              Alternative
+            </span>
+
+            <span class="choice-description">
+              Bold & expressive
+            </span>
+
+          </button>
+
+
+          <button
+            class="choice-card"
+            data-type="vibe"
+            data-value="Elegant"
+          >
+
+            <span class="choice-icon">
+              ✨
+            </span>
+
+            <span class="choice-name">
+              Elegant
+            </span>
+
+            <span class="choice-description">
+              Clean & refined
+            </span>
+
+          </button>
+
+
+          <button
+            class="choice-card"
+            data-type="vibe"
+            data-value="Cozy"
+          >
+
+            <span class="choice-icon">
+              ☁️
+            </span>
+
+            <span class="choice-name">
+              Cozy
+            </span>
+
+            <span class="choice-description">
+              Comfortable & relaxed
+            </span>
+
+          </button>
+
+
+          <button
+            class="choice-card"
+            data-type="vibe"
+            data-value="Playful"
+          >
+
+            <span class="choice-icon">
+              🌈
+            </span>
+
+            <span class="choice-name">
+              Playful
+            </span>
+
+            <span class="choice-description">
+              Colorful & fun
+            </span>
+
+          </button>
+
+        </div>
+
+
+        <div class="studio-divider"></div>
+
+
+
+        <!-- COLORS -->
+
+        <div class="panel-heading">
+
+          <div>
+
+            <span class="panel-label">
+              02
+            </span>
+
+            <h2>
+              Pick your colors
+            </h2>
+
+          </div>
+
+        </div>
+
+
+        <div
+          class="color-grid"
+          id="colorChoices"
+        >
+
+          <button
+            class="color-choice"
+            data-type="color"
+            data-value="Pink"
+            style="--choice-color:#f3a6ca;"
+          >
+
+            <span></span>
+
+            Pink
+
+          </button>
+
+
+          <button
+            class="color-choice"
+            data-type="color"
+            data-value="Lavender"
+            style="--choice-color:#b9a8ed;"
+          >
+
+            <span></span>
+
+            Lavender
+
+          </button>
+
+
+          <button
+            class="color-choice"
+            data-type="color"
+            data-value="Blue"
+            style="--choice-color:#9ccdf0;"
+          >
+
+            <span></span>
+
+            Blue
+
+          </button>
+
+
+          <button
+            class="color-choice"
+            data-type="color"
+            data-value="Green"
+            style="--choice-color:#9dd9b6;"
+          >
+
+            <span></span>
+
+            Green
+
+          </button>
+
+
+          <button
+            class="color-choice"
+            data-type="color"
+            data-value="Yellow"
+            style="--choice-color:#f1d88d;"
+          >
+
+            <span></span>
+
+            Yellow
+
+          </button>
+
+
+          <button
+            class="color-choice"
+            data-type="color"
+            data-value="Black"
+            style="--choice-color:#35313b;"
+          >
+
+            <span></span>
+
+            Black
+
+          </button>
+
+        </div>
+
+
+        <div class="studio-divider"></div>
+
+
+
+        <!-- ACCESSORIES -->
+
+        <div class="panel-heading">
+
+          <div>
+
+            <span class="panel-label">
+              03
+            </span>
+
+            <h2>
+              Add some details
+            </h2>
+
+          </div>
+
+        </div>
+
+
+        <div class="accessory-grid">
+
+
+          <button
+            class="accessory-choice"
+            data-type="accessory"
+            data-value="Bows"
+          >
+
+            🎀
+
+            <span>
+              Bows
+            </span>
+
+          </button>
+
+
+          <button
+            class="accessory-choice"
+            data-type="accessory"
+            data-value="Jewelry"
+          >
+
+            💎
+
+            <span>
+              Jewelry
+            </span>
+
+          </button>
+
+
+          <button
+            class="accessory-choice"
+            data-type="accessory"
+            data-value="Hoodies"
+          >
+
+            🧸
+
+            <span>
+              Hoodies
+            </span>
+
+          </button>
+
+
+          <button
+            class="accessory-choice"
+            data-type="accessory"
+            data-value="Hair Accessories"
+          >
+
+            🌸
+
+            <span>
+              Hair accessories
+            </span>
+
+          </button>
+
+
+          <button
+            class="accessory-choice"
+            data-type="accessory"
+            data-value="Pins"
+          >
+
+            ⭐
+
+            <span>
+              Pins
+            </span>
+
+          </button>
+
+
+          <button
+            class="accessory-choice"
+            data-type="accessory"
+            data-value="Bags"
+          >
+
+            👜
+
+            <span>
+              Bags
+            </span>
+
+          </button>
+
+        </div>
+
+
+        <button
+          class="save-style-button"
+          id="saveStyle"
+        >
+
+          <span>
+            ♡
+          </span>
+
+          Save my style
+
+        </button>
+
+      </div>
+
+
+
+      <!-- =========================
+           STYLE PREVIEW
+      ========================== -->
+
+      <aside class="style-preview">
+
+
+        <div class="preview-top">
+
+          <span>
+            YOUR STYLE
+          </span>
+
+          <span class="live-dot">
+            LIVE
+          </span>
+
+        </div>
+
+
+        <div class="preview-art">
+
+          <div class="preview-circle"></div>
+
+          <div class="preview-sparkle sparkle-one">
+            ✦
+          </div>
+
+          <div class="preview-sparkle sparkle-two">
+            ✧
+          </div>
+
+          <div class="preview-sparkle sparkle-three">
+            ·
+          </div>
+
+          <div class="preview-flower">
+            ✿
+          </div>
+
+        </div>
+
+
+        <div class="preview-content">
+
+          <span class="preview-label">
+            MY STYLE
+          </span>
+
+
+          <h2 id="previewTitle">
+            Your vibe
+          </h2>
+
+
+          <p id="previewDescription">
+
+            Start choosing things on the left to create your
+            personal style.
+
+          </p>
+
+
+          <div
+            class="preview-tags"
+            id="previewTags"
+          >
+
+            <span class="empty-tag">
+              Nothing selected yet
+            </span>
+
+          </div>
+
+
+          <div class="preview-footer">
+
+            <div>
+
+              <span>
+                Style score
+              </span>
+
+              <strong id="styleScore">
+                0%
+              </strong>
+
+            </div>
+
+
+            <div class="score-bar">
+
+              <span id="scoreBar"></span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </aside>
+
+    </section>
+
+
+
+    <!-- =========================
+         MOVEMENT LINK
+    ========================== -->
+
+    <section class="movement-link-section">
+
+      <div class="movement-link-icon">
+        🌷
+      </div>
+
+      <div class="movement-link-content">
 
         <span class="panel-label">
-          01
+          WANT MORE?
         </span>
 
         <h2>
-          Choose your vibe
+          Explore Mallow Movement
         </h2>
 
-      </div>
-
-
-      <span
-        class="selection-count"
-        id="selectionCount"
-      >
-        0 selected
-      </span>
-
-    </div>
-
-
-    <div
-      class="choice-grid"
-      id="vibeChoices"
-    >
-
-
-      <button
-        class="choice-card"
-        data-type="vibe"
-        data-value="Soft"
-      >
-
-        <span class="choice-icon">
-          🌷
-        </span>
-
-        <span class="choice-name">
-          Soft
-        </span>
-
-        <span class="choice-description">
-          Gentle & cozy
-        </span>
-
-      </button>
-
-
-
-      <button
-        class="choice-card"
-        data-type="vibe"
-        data-value="Cute"
-      >
-
-        <span class="choice-icon">
-          🎀
-        </span>
-
-        <span class="choice-name">
-          Cute
-        </span>
-
-        <span class="choice-description">
-          Playful & sweet
-        </span>
-
-      </button>
-
-
-
-      <button
-        class="choice-card"
-        data-type="vibe"
-        data-value="Alternative"
-      >
-
-        <span class="choice-icon">
-          🖤
-        </span>
-
-        <span class="choice-name">
-          Alternative
-        </span>
-
-        <span class="choice-description">
-          Bold & expressive
-        </span>
-
-      </button>
-
-
-
-      <button
-        class="choice-card"
-        data-type="vibe"
-        data-value="Elegant"
-      >
-
-        <span class="choice-icon">
-          ✨
-        </span>
-
-        <span class="choice-name">
-          Elegant
-        </span>
-
-        <span class="choice-description">
-          Clean & refined
-        </span>
-
-      </button>
-
-
-
-      <button
-        class="choice-card"
-        data-type="vibe"
-        data-value="Cozy"
-      >
-
-        <span class="choice-icon">
-          ☁️
-        </span>
-
-        <span class="choice-name">
-          Cozy
-        </span>
-
-        <span class="choice-description">
-          Comfortable & relaxed
-        </span>
-
-      </button>
-
-
-
-      <button
-        class="choice-card"
-        data-type="vibe"
-        data-value="Playful"
-      >
-
-        <span class="choice-icon">
-          🌈
-        </span>
-
-        <span class="choice-name">
-          Playful
-        </span>
-
-        <span class="choice-description">
-          Colorful & fun
-        </span>
-
-      </button>
-
-    </div>
-
-
-    <div class="studio-divider"></div>
-
-
-
-    <!-- COLORS -->
-
-    <div class="panel-heading">
-
-      <div>
-
-        <span class="panel-label">
-          02
-        </span>
-
-        <h2>
-          Pick your colors
-        </h2>
+        <p>
+          Looking for a separate space to explore movement
+          and wellbeing? You can check it out whenever you want.
+        </p>
 
       </div>
 
-    </div>
 
-
-    <div
-      class="color-grid"
-      id="colorChoices"
-    >
-
-
-      <button
-        class="color-choice"
-        data-type="color"
-        data-value="Pink"
-        style="--choice-color:#f3a6ca;"
+      <a
+        href="movement.html"
+        class="movement-link-button"
       >
+        Explore Movement
+        <span>→</span>
+      </a>
 
-        <span></span>
+    </section>
 
-        Pink
 
-      </button>
 
+    <!-- =========================
+         BOTTOM MESSAGE
+    ========================== -->
 
+    <section class="studio-message">
 
-      <button
-        class="color-choice"
-        data-type="color"
-        data-value="Lavender"
-        style="--choice-color:#b9a8ed;"
-      >
 
-        <span></span>
-
-        Lavender
-
-      </button>
-
-
-
-      <button
-        class="color-choice"
-        data-type="color"
-        data-value="Blue"
-        style="--choice-color:#9ccdf0;"
-      >
-
-        <span></span>
-
-        Blue
-
-      </button>
-
-
-
-      <button
-        class="color-choice"
-        data-type="color"
-        data-value="Green"
-        style="--choice-color:#9dd9b6;"
-      >
-
-        <span></span>
-
-        Green
-
-      </button>
-
-
-
-      <button
-        class="color-choice"
-        data-type="color"
-        data-value="Yellow"
-        style="--choice-color:#f1d88d;"
-      >
-
-        <span></span>
-
-        Yellow
-
-      </button>
-
-
-
-      <button
-        class="color-choice"
-        data-type="color"
-        data-value="Black"
-        style="--choice-color:#35313b;"
-      >
-
-        <span></span>
-
-        Black
-
-      </button>
-
-    </div>
-
-
-    <div class="studio-divider"></div>
-
-
-
-    <!-- ACCESSORIES -->
-
-    <div class="panel-heading">
-
-      <div>
-
-        <span class="panel-label">
-          03
-        </span>
-
-        <h2>
-          Add some details
-        </h2>
-
-      </div>
-
-    </div>
-
-
-    <div class="accessory-grid">
-
-
-      <button
-        class="accessory-choice"
-        data-type="accessory"
-        data-value="Bows"
-      >
-
-        🎀
-
-        <span>
-          Bows
-        </span>
-
-      </button>
-
-
-
-      <button
-        class="accessory-choice"
-        data-type="accessory"
-        data-value="Jewelry"
-      >
-
-        💎
-
-        <span>
-          Jewelry
-        </span>
-
-      </button>
-
-
-
-      <button
-        class="accessory-choice"
-        data-type="accessory"
-        data-value="Hoodies"
-      >
-
-        🧸
-
-        <span>
-          Hoodies
-        </span>
-
-      </button>
-
-
-
-      <button
-        class="accessory-choice"
-        data-type="accessory"
-        data-value="Hair Accessories"
-      >
-
-        🌸
-
-        <span>
-          Hair accessories
-        </span>
-
-      </button>
-
-
-
-      <button
-        class="accessory-choice"
-        data-type="accessory"
-        data-value="Pins"
-      >
-
-        ⭐
-
-        <span>
-          Pins
-        </span>
-
-      </button>
-
-
-
-      <button
-        class="accessory-choice"
-        data-type="accessory"
-        data-value="Bags"
-      >
-
-        👜
-
-        <span>
-          Bags
-        </span>
-
-      </button>
-
-    </div>
-
-
-    <button
-      class="save-style-button"
-      id="saveStyle"
-    >
-
-      <span>
-        ♡
-      </span>
-
-      Save my style
-
-    </button>
-
-  </div>
-
-
-
-  <!-- =========================
-       STYLE PREVIEW
-  ========================== -->
-
-  <aside class="style-preview">
-
-
-    <div class="preview-top">
-
-      <span>
-        YOUR STYLE
-      </span>
-
-      <span class="live-dot">
-        LIVE
-      </span>
-
-    </div>
-
-
-    <div class="preview-art">
-
-      <div class="preview-circle"></div>
-
-      <div class="preview-sparkle sparkle-one">
-        ✦
-      </div>
-
-      <div class="preview-sparkle sparkle-two">
-        ✧
-      </div>
-
-      <div class="preview-sparkle sparkle-three">
-        ·
-      </div>
-
-      <div class="preview-flower">
+      <div class="message-icon">
         ✿
       </div>
 
-    </div>
-
-
-    <div class="preview-content">
-
-      <span class="preview-label">
-        MY STYLE
-      </span>
-
-
-      <h2 id="previewTitle">
-        Your vibe
-      </h2>
-
-
-      <p id="previewDescription">
-
-        Start choosing things on the left to create your
-        personal style.
-
-      </p>
-
-
-      <div
-        class="preview-tags"
-        id="previewTags"
-      >
-
-        <span class="empty-tag">
-          Nothing selected yet
-        </span>
-
-      </div>
-
-
-      <div class="preview-footer">
-
-        <div>
-
-          <span>
-            Style score
-          </span>
-
-          <strong id="styleScore">
-            0%
-          </strong>
-
-        </div>
-
-
-        <div class="score-bar">
-
-          <span id="scoreBar"></span>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </aside>
-
-</section>
-
-
-
-<!-- =========================
-     MALLOW MOVEMENT
-========================== -->
-
-<section class="movement-section">
-
-
-  <div class="movement-header">
-
-    <div>
-
-      <span class="studio-eyebrow">
-        OPTIONAL
-      </span>
-
-
-      <h2>
-        🌷 Mallow Movement
-      </h2>
-
-
-      <p>
-        Move in a way that feels good to you.
-      </p>
-
-    </div>
-
-  </div>
-
-
-
-  <!-- WELLBEING NOTE -->
-
-  <div class="movement-note">
-
-    <div class="movement-note-icon">
-      ♡
-    </div>
-
-
-    <div>
-
-      <strong>
-        You don't have to change your body to express yourself.
-      </strong>
-
-
-      <p>
-
-        If movement is something you enjoy, Mallow can help you
-        find activities that support your strength, energy,
-        flexibility, and overall wellbeing.
-
-      </p>
-
-
-      <p>
-
-        Do it because <em>you</em> want to — not because you feel
-        like you have to look a certain way.
-
-      </p>
-
-    </div>
-
-  </div>
-
-
-
-  <!-- MOVEMENT OPTIONS -->
-
-  <div class="movement-grid">
-
-
-    <button
-      class="movement-card"
-      data-routine="beginner"
-    >
-
-      <span class="movement-icon">
-        🌱
-      </span>
-
-      <strong>
-        Beginner
-      </strong>
-
-      <span>
-        Simple movement to get started.
-      </span>
-
-    </button>
-
-
-
-    <button
-      class="movement-card"
-      data-routine="strength"
-    >
-
-      <span class="movement-icon">
-        💪
-      </span>
-
-      <strong>
-        Strength
-      </strong>
-
-      <span>
-        Build general strength and stability.
-      </span>
-
-    </button>
-
-
-
-    <button
-      class="movement-card"
-      data-routine="stretch"
-    >
-
-      <span class="movement-icon">
-        🧘
-      </span>
-
-      <strong>
-        Stretch
-      </strong>
-
-      <span>
-        Gentle flexibility and mobility.
-      </span>
-
-    </button>
-
-
-
-    <button
-      class="movement-card"
-      data-routine="energy"
-    >
-
-      <span class="movement-icon">
-        ⚡
-      </span>
-
-      <strong>
-        Energy
-      </strong>
-
-      <span>
-        A quick way to get yourself moving.
-      </span>
-
-    </button>
-
-
-
-    <button
-      class="movement-card"
-      data-routine="relax"
-    >
-
-      <span class="movement-icon">
-        🌙
-      </span>
-
-      <strong>
-        Wind Down
-      </strong>
-
-      <span>
-        Calm, gentle movement for relaxing.
-      </span>
-
-    </button>
-
-
-
-    <button
-      class="movement-card random-movement"
-      id="randomRoutine"
-    >
-
-      <span class="movement-icon">
-        🎲
-      </span>
-
-      <strong>
-        Surprise Me
-      </strong>
-
-      <span>
-        Pick a routine for me.
-      </span>
-
-    </button>
-
-  </div>
-
-
-
-  <!-- ROUTINE DISPLAY -->
-
-  <div
-    class="routine-display"
-    id="routineDisplay"
-    hidden
-  >
-
-
-    <div class="routine-top">
 
       <div>
 
-        <span class="studio-eyebrow">
-          YOUR ROUTINE
-        </span>
+        <h2>
+          Your style doesn't need a label.
+        </h2>
 
 
-        <h3 id="routineTitle">
-          Routine
-        </h3>
+        <p>
+
+          Mix things together. Change your mind.
+          Try something completely different.
+          Mallow is your space to experiment.
+
+        </p>
 
       </div>
 
-
-      <button
-        class="routine-close"
-        id="closeRoutine"
-        aria-label="Close routine"
-      >
-        ×
-      </button>
-
-    </div>
-
-
-    <div
-      class="routine-list"
-      id="routineList"
-    ></div>
-
-
-    <p class="routine-reminder">
-
-      🌷 You can stop, rest, or skip anything that doesn't feel
-      right for you.
-
-    </p>
-
-  </div>
-
-</section>
-
-<!-- =========================
-     MALLOW MOVEMENT
-========================= -->
-
-<section class="movement-section">
-
-  <div class="movement-header">
-
-    <div>
-
-      <span class="studio-eyebrow">
-        OPTIONAL
-      </span>
-
-      <h2>
-        🌷 Mallow Movement
-      </h2>
-
-      <p>
-        Move in a way that feels good to you.
-      </p>
-
-    </div>
-
-  </div>
-
-
-  <div class="movement-note">
-
-    <div class="movement-note-icon">
-      ♡
-    </div>
-
-    <div>
-
-      <strong>
-        You don't have to change your body to express yourself.
-      </strong>
-
-      <p>
-        If movement is something you enjoy, Mallow can help you
-        find activities that support your strength, energy,
-        flexibility, and overall wellbeing.
-      </p>
-
-      <p>
-        Do it because <em>you</em> want to — not because you feel
-        like you have to look a certain way.
-      </p>
-
-    </div>
-
-  </div>
-
-
-  <div class="movement-grid">
-
-    <button
-      class="movement-card"
-      data-routine="beginner"
-    >
-      <span class="movement-icon">🌱</span>
-
-      <strong>Beginner</strong>
-
-      <span>
-        Simple movement to get started.
-      </span>
-    </button>
-
-
-    <button
-      class="movement-card"
-      data-routine="strength"
-    >
-      <span class="movement-icon">💪</span>
-
-      <strong>Strength</strong>
-
-      <span>
-        Build general strength and stability.
-      </span>
-    </button>
-
-
-    <button
-      class="movement-card"
-      data-routine="stretch"
-    >
-      <span class="movement-icon">🧘</span>
-
-      <strong>Stretch</strong>
-
-      <span>
-        Gentle flexibility and mobility.
-      </span>
-    </button>
-
-
-    <button
-      class="movement-card"
-      data-routine="energy"
-    >
-      <span class="movement-icon">⚡</span>
-
-      <strong>Energy</strong>
-
-      <span>
-        A quick way to get yourself moving.
-      </span>
-    </button>
-
-
-    <button
-      class="movement-card"
-      data-routine="relax"
-    >
-      <span class="movement-icon">🌙</span>
-
-      <strong>Wind Down</strong>
-
-      <span>
-        Calm, gentle movement for relaxing.
-      </span>
-    </button>
-
-
-    <button
-      class="movement-card random-movement"
-      id="randomRoutine"
-    >
-      <span class="movement-icon">🎲</span>
-
-      <strong>Surprise Me</strong>
-
-      <span>
-        Pick a routine for me.
-      </span>
-    </button>
-
-  </div>
-
-
-  <div
-    class="routine-display"
-    id="routineDisplay"
-    hidden
-  >
-
-    <div class="routine-top">
-
-      <div>
-
-        <span class="studio-eyebrow">
-          YOUR ROUTINE
-        </span>
-
-        <h3 id="routineTitle">
-          Routine
-        </h3>
-
-      </div>
-
-      <button
-        class="routine-close"
-        id="closeRoutine"
-        aria-label="Close routine"
-      >
-        ×
-      </button>
-
-    </div>
-
-
-    <div
-      class="routine-list"
-      id="routineList"
-    ></div>
-
-
-    <p class="routine-reminder">
-      🌷 You can stop, rest, or skip anything that doesn't feel
-      right for you.
-    </p>
-
-  </div>
-
-</section>
-    
-
-<!-- =========================
-     BOTTOM MESSAGE
-========================== -->
-
-<section class="studio-message">
-
-
-  <div class="message-icon">
-    ✿
-  </div>
-
-
-  <div>
-
-    <h2>
-      Your style doesn't need a label.
-    </h2>
-
-
-    <p>
-
-      Mix things together. Change your mind.
-      Try something completely different.
-      Mallow is your space to experiment.
-
-    </p>
-
-  </div>
-
-</section>
-```
+    </section>
 
   </main>
+
+
 
   <!-- =========================
        FOOTER
@@ -1138,23 +719,23 @@
 
   <footer>
 
-```
-<div class="footer-logo">
-  ✿ mallow
-</div>
+    <div class="footer-logo">
+      ✿ mallow
+    </div>
 
 
-<p>
-  Express yourself, your way.
-</p>
+    <p>
+      Express yourself, your way.
+    </p>
 
 
-<span>
-  Made with ♡
-</span>
-```
+    <span>
+      Made with ♡
+    </span>
 
   </footer>
+
+
 
   <!-- =========================
        JAVASCRIPT
