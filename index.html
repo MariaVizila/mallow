@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Mallow — Express Yourself</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Background decorations -->
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+
+    <div class="logo">
+      <div class="logo-flower">✿</div>
+      <span>mallow</span>
+    </div>
+
+    <div class="nav-links">
+      <a href="#" class="active">Home</a>
+      <a href="#style">Style</a>
+      <a href="#vibe">Vibe</a>
+      <a href="#express">Express</a>
+      <a href="#confidence">Confidence</a>
+    </div>
+
+    <button class="profile-button">
+      <span>♡</span>
+      My Mallow
+    </button>
+
+  </nav>
+
+
+  <!-- Hero -->
+  <main>
+
+    <section class="hero">
+
+      <div class="hero-content">
+
+        <div class="welcome-pill">
+          <span>✦</span>
+          A space to be yourself
+        </div>
+
+        <h1>
+          Express yourself.
+          <span>Your way.</span>
+        </h1>
+
+        <p>
+          Explore your style, discover your vibe, and build
+          confidence in the person you want to be.
+        </p>
+
+        <div class="hero-buttons">
+
+          <button class="primary-button" onclick="startExploring()">
+            Start exploring
+            <span>→</span>
+          </button>
+
+          <button class="secondary-button" onclick="scrollToSection('vibe')">
+            Discover your vibe
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- Decorative card -->
+      <div class="hero-card">
+
+        <div class="flower-decoration">✿</div>
+
+        <div class="hero-card-header">
+          <span>Your space</span>
+          <span class="tiny-dot"></span>
+        </div>
+
+        <h2>Be soft.<br>Be bold.<br>Be <em>you.</em></h2>
+
+        <p>
+          There's no right way to express yourself.
+        </p>
+
+        <div class="mini-tags">
+          <span>🎀 Style</span>
+          <span>🌷 Confidence</span>
+          <span>💭 Expression</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Explore -->
+    <section class="section" id="style">
+
+      <div class="section-heading">
+
+        <div>
+          <span class="eyebrow">EXPLORE</span>
+          <h2>Find what feels like you.</h2>
+        </div>
+
+        <p>
+          Discover different ways to express your personality
+          without having to fit into one box.
+        </p>
+
+      </div>
+
+
+      <div class="feature-grid">
+
+        <div class="feature-card pink-card">
+
+          <div class="feature-icon">🎀</div>
+
+          <h3>Explore Your Style</h3>
+
+          <p>
+            Play with colors, aesthetics, outfits, accessories,
+            and ideas that match your personality.
+          </p>
+
+          <button onclick="showMessage('Style exploration is coming soon!')">
+            Explore style →
+          </button>
+
+        </div>
+
+
+        <div class="feature-card purple-card" id="vibe">
+
+          <div class="feature-icon">✨</div>
+
+          <h3>Build Your Vibe</h3>
+
+          <p>
+            Put together the colors, moods, aesthetics, and
+            little details that make your vibe yours.
+          </p>
+
+          <button onclick="showMessage('Vibe building is coming soon!')">
+            Build your vibe →
+          </button>
+
+        </div>
+
+
+        <div class="feature-card blue-card" id="express">
+
+          <div class="feature-icon">💭</div>
+
+          <h3>Express Yourself</h3>
+
+          <p>
+            Reflect, create, and explore different parts of
+            yourself through private prompts.
+          </p>
+
+          <button onclick="showMessage('Expression prompts are coming soon!')">
+            Start expressing →
+          </button>
+
+        </div>
+
+
+        <div class="feature-card green-card" id="confidence">
+
+          <div class="feature-icon">🌷</div>
+
+          <h3>Grow Your Confidence</h3>
+
+          <p>
+            Find small reminders and activities that help you
+            feel more comfortable being yourself.
+          </p>
+
+          <button onclick="showMessage('Confidence tools are coming soon!')">
+            Build confidence →
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Quote section -->
+    <section class="quote-section">
+
+      <div class="quote-flower">✿</div>
+
+      <h2>
+        You don't have to fit<br>
+        into someone else's idea of you.
+      </h2>
+
+      <p>
+        Mallow is about discovering what feels right for <em>you.</em>
+      </p>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+
+    <div class="footer-logo">
+      ✿ mallow
+    </div>
+
+    <p>
+      Express yourself, your way.
+    </p>
+
+    <span>
+      Made with ♡
+    </span>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
